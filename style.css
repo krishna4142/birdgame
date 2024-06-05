@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 1px solid red;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(135, 220, 235, 0.523),rgba(255, 166, 0, 0.688),rgba(0, 128, 0, 0.589),rgba(0, 255, 255, 0.14));
+ }
+.containor{
+    height: 100%;
+    width: 70%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.header{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.direction{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    border: none;
+}
+*{
+    color: black;
+}
+.parent{
+    width: 90%;
+    height: 50%;
+    border: 4px solid rgb(186, 12, 230);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+.parent div{
+     width: 14%;
+    height: 15%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter:inherit;
+    cursor: pointer;
+}
+.lock{
+    /* color: gold; */
+}
+.level1 span, .level2 span,.level3 span,.level4 span,.level5 span,.level6 span,.level7 span,.level8 span,.level9 span,.level10 span,.level11 span,.level12 span,.level13 span,.level14 span,.level15 span,.level16 span,.level17 span,.level18 span,.level19 span,.level20 span,.level21 span,.level22 span,.level23 span,.level24 span,.level25 span,.level26 span,.level27 span,.level28 span,.level29 span,.level30 span{
+     position: absolute;
+}
+span{
+    cursor: pointer;
+}
+.menu_con,.menu_setting{
+    top: 10.2%;
+    left: 15%;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.menu.openmenu .menu_con,.menu.opensetting .menu_setting{
+    display: block;
+}
+.menu_setting{
+ left: 65%;}
+.dialog{
+    position: absolute;
+    background-color: aliceblue;
+    width: 50%;
+    height: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+     display: none;
+
+  }
+  .dialog .con_child2,.dialog .con_child1 ,.dialog div ,.dialog h3{
+    width: 100%;
+    position:relative;
+     display: flex;
+    align-items: center;
+     justify-content: space-around;
+     margin: 0 0  10%;
+  }
+  .body.openverify .dialog{
+     
+    display: block;
+  }

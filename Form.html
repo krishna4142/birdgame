@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(75, 135, 135, 0.336);
+  }
+ .form_head,.login{
+ /*border: 1px solid red;*/ 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  }
+  .form_row {
+   width: auto;
+   /* border: 1px solid red; */
+   display: flex;
+            
+  }
+ .lable_name{
+   width: 200px;
+   }
+   input{
+   border: none;
+   border-bottom: 1px solid black;
+   outline: none;
+   }
+ .head{
+   align-content: center;
+   justify-content: center;
+   }
+   .bt1{
+   border: 1px solid black;
+   }
+ *{
+    color: black;
+  }
+ h1{
+   color: rgb(33, 197, 197);
+   }
+  .Address{
+  width:300px;
+  height:50px;
+  border:1px solid black;
+  }
+  .form_head,.startgame{
+    display: none;
+  }
+  .login{
+    width: 55%;
+    height: 50%;
+     flex-direction: column;
+    align-items: center;
+  }
+  .login div{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+     margin: 5%;
+      width: 100%;
+  }
+  .body.open .form_head{
+    display: block;
+  }
+  .body.open .login{
+    display: none;
+  }
+  .body.opengame .startgame{
+    display: block;
+  }
+  .body.opengame .form_head , .body.opengame .login{
+    display: none;
+  }
+  .krishna{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+  }
+ </style>
+ <script >
+//  function clic(){
+//  document.write("<i>Successfully Rigister   !!!!!!!!<i>");
+//  }
+//  function log(){
+//  document.write("go to login page");
+//  }
+ </script>
+</head>
+<body class="body">
+<div class="form_head">
+  <div class="sai">
+    <div class="form_row head">
+    <h1>Registration</h1>
+  </div>
+  <div class="form_row">
+    <div class="lable_name">enter your name</div>
+    <div><input type="text" placeholder="enter name" id="name"></div>
+  </div><br>
+  <div class="form_row">
+    <div class="lable_name">enter your father name</div>
+    <div><input type="text" placeholder="father name" id="F_name"></div>
+ </div><br>
+  <div class="form_row">
+    <div class="lable_name">enter your email</div>
+    <div><input type="email" placeholder="your email" id="email"></div>
+ </div><br>
+ <!-- <div class="form_row">
+  <div class="lable_name">enter your password</div>
+  <div><input type="password" placeholder="password"></div>
+  </div><br> -->
+  <div class="form_row">
+    <div class="lable_name">enter your D.O.B</div>
+    <div><input type="date" placeholder="date of birth" id="dob"></div>
+ </div><br>
+ <!-- <div class="form_row">
+ <div class="lable_name">enter your Gender</div>
+ <div><input type="radio" name="gender">Male &nbsp; &nbsp; &nbsp;<input type="radio" name="gender">Female</div>
+ </div><br> -->
+  <div class="form_row">
+    <div class="lable_name" >enter your P.H Numer</div>
+    <div><input type="tel" placeholder="phone number" id="phone"></div>
+ </div><br>
+ <!-- <div class="form_row">
+ <div class="lable_name">Chouse your Image</div>
+ <div><input type="file" placeholder="Enter Image"></div>
+ </div><br> -->
+  <div class="form_row">
+    <div class="lable_name">enter your Address</div>
+    <div><input type="text" placeholder="Enter Your Address" class="address" id="ADDRESS"></div>
+ </div><br>
+  <div class="form_row head krishna">
+    <input type="button" value="Rigister" class="btn1" >
+    <button class="log">LOGIN</button>
+  </div>
+  
+ </div>
+ </div>
+<div class="login">
+  <h1>LOGIN</h1>
+  <div><label for="name" >YOUR NUMBER &nbsp; &nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;</label><input type="text" id="v_number" placeholder="enter your number"></div>
+  <div><label for="email">YOUR EMAIL &nbsp; &nbsp;&nbsp;&nbsp;  :&nbsp;&nbsp;</label><input type="text" id="v_email" placeholder="enter your email"></div>
+  <div><button class="v_signup">SIGN UP</button> <button class="v_login">LOGIN</button></div>
+</div>
+<div class="startgame"><button><a href="game.html">START</a></button></div>
+ <script type="module" src="store.js"></script>
+</body>
+</html>
